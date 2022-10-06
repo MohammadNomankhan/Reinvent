@@ -27,6 +27,10 @@ function newQuote() {
 
 	quoteText.textContent = quote.text;
 }
+// load new quote automatic
+function loadQuote() {
+	setInterval(newQuote, 15000);
+}
 
 async function getQuotes() {
 
@@ -56,6 +60,7 @@ buttonNew.addEventListener('click', getQuotes);
 
 // on load
 getQuotes();
+loadQuote();
 
 
 ///////////////////////////////
