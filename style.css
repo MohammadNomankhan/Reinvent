@@ -138,6 +138,7 @@ body{
 	background-color: #ff951f;
 	background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50% );
 	background-size: 210%;
+	display: inline-block;
 }
 
 .button__new-quote:hover {
@@ -148,7 +149,7 @@ body{
 .button__new-quote:active {
 	background-color: #ff951f;
 	background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50% );
-	background-size: 210%;
+	background-size: 220%;
 }
 /* Media manager */
 
@@ -165,8 +166,18 @@ body{
 		font-size: 1.5rem;
 	}
 
+	.button__ig {
+		margin: 0;
+	}
+
 	.button {
+		font-size: 1.5rem;
 		margin-top: 2rem;
+		justify-content: space-between;
+
+	}
+	.button__new-quote {
+		font-size: 1.25r0em;
 	}
 }
 
