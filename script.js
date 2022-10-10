@@ -52,6 +52,7 @@ function tweetQuote() {
   	window.open(twitterUrl, '_blank');
 }
 
+
 // Event listners
 
 buttonTwitter.addEventListener('click', tweetQuote);
@@ -61,6 +62,12 @@ buttonNew.addEventListener('click', getQuotes);
 // on load
 getQuotes();
 loadQuote();
+
+// reload all 
+window.onload = function() {
+	newQuote();
+}
+
 
 
 ///////////////////////////////
