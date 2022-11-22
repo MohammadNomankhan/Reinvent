@@ -52,6 +52,16 @@ function tweetQuote() {
   	window.open(twitterUrl, '_blank');
 }
 
+// add this as story
+function takeshot() {
+
+    html2canvas(quoteText).then(
+        function (canvas) {
+            document
+            .getElementById('output')
+            .appendChild(canvas);
+        })
+}
 
 // Event listners
 
